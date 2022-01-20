@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --tran: all 0.3s linear;
+}
+.fl{
+    float: right !important;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul li{
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+}
+.mt-1{
+    margin-top: 3rem;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    width: 100%;
+    max-width: 1280px;
+}
+.t_center{
+    text-align: center;
+}
+ul{
+    padding-left: 0px;
+}
+.d-flex{
+    display: flex;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.align-items-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.justyify-content-between{
+    justify-content: space-between;
+}
+.t-right{
+    text-align: right;
+}
+/* hover button */
+.btn-1{
+    text-transform: uppercase;
+	text-decoration: none;
+	font-size: 18px;
+	color: 	#fff;
+	padding: -4px 20px ;
+    font-weight: 700;
+    width: 330px;
+    border-radius: 8px;
+    background-color: #5cb85c;
+	border: 1px solid #4cae4c;
+	position: 	relative;
+	z-index: 1;
+    text-align: center;
+	transition: var(--tran);
+	overflow: hidden;
+    
+    
+}
+.btn-1::before{
+    content: '';
+	position: absolute;
+	top: 	0;
+	left: 	0;
+	background-color: #dc5134;
+	width: 	100%;
+    border: .1rem solid #dc5134 ;
+	height: 100%;
+	transform: translateX(-100%);
+	transition: var(--tran);
+}
+.btn-1:hover:before{
+    transform: translateX(0);
+	z-index: 	-1;
+    outline: none;
+}
+.btn-1:hover{
+    color: #fff;
+    border: .1rem solid #dc5134;
+}
+
+.btn-1 span{
+    font-size: 15px;
+    font-weight: 700;
+}
+@keyframes animate{
+    0%{
+      transform: scale(.5);
+    }
+    50%{
+     opacity: 1;
+    }
+    100%{
+      transform: scale(1.5);
+    }
+  }
+
+/* header area start */
+header .header_top {
+    position: relative;
+    z-index: 1;
+    padding: 16px;
+}
+header .header_top::after {
+    position: absolute;
+    content: '';
+    background: #ccc;
+    width: 100%;
+    height: 100%;
+    opacity: .6;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+
+/* header end */
+
+/* product start */
+.product_detail{
+    padding: 50px 0px;
+}
+
+.img-fluid{
+    border-radius: 5px;
+}
+.heading {
+    margin-top: 10px;
+    color: #47bac1;
+    font-size: 34px;
+}
+#addtocart span{
+    font-size: 15px;
+    margin-left: 5px;
+}
+.price span{
+    color: red;
+}
+.Save span{
+    color: red;
+}
+.list span{
+    text-decoration: line-through;
+}
+.read{
+    color: #3c763d;
+}
+/*  */
+
+/* order now area */
+.head3 span{
+    color: red;
+    font-weight: 600;
+}
+.food_area{
+    padding: 100px 0px;
+}
+.time{
+    font-size: 34px;
+    color: #47bac1;
+}
+li span{
+    margin-left: 4px;
+}
+.heading4{
+    background: black;
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: -2px;
+    font-weight: bolder;
+    min-height: 146px;
+    text-shadow: 2px 2px black;
+}
+.heading4 span{
+    color: #47bac1;
+}
+span.red{
+    color: red;
+    text-shadow: 2px 2px black;
+    text-decoration: line-through;
+}
+span.text{
+    font-size: 20px;
+}
+.addtocart_left {
+    color: #FFF;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bolder;
+    min-height: 146px;
+}
+span.blue {
+    color: #47bac1;
+    text-shadow: 2px 2px black;
+}
+.fancy_addtocart {
+    background: url(../images/n2.png);
+    padding-left: 80px;
+    margin-left: -40px;
+    min-height: 146px;
+    min-width: 403px;
+}
+.chart{
+    padding-bottom: 30px;
+}
+.heading4 h4{
+    margin-top: -11px;
+}
+.order_includes{
+    padding: 50px 0px;
+}
+/* offer */
+.offer_new{
+    margin-top: 1rem;
+}
+.order_title{
+    color: #47bac1;
+
+}
+.order_title span{
+    color: red;
+    
+}
+.top_left{
+    margin-left: 23px;
+    color: #47bac1;
+    font-weight: 700;
+}
+.top_down{
+    margin-left: 23px;
+    margin-top: 12px;
+}
+.top_down span{
+    color: red;
+    font-size: 27px;
+}
+.hurry{
+    font-size: 14px;
+    text-align: left;
+}
+.hurry span{
+    color: red;
+    font-weight: 600;
+    font-size: 20px;
+}
+.order_includes{
+    padding: 70px 0px;
+}
+/* order area end */
+.wing_area{
+    padding: 50px 0px;
+}
+/*footer area start*/
+.footer {
+    padding: 10px 0px;
+    background: #353f47;
+  }
+  .footer p {
+    text-align: center;
+    color: #fff;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  
+  /*footer area end*/

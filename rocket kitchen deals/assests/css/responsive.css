@@ -1,0 +1,103 @@
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+  
+  @media (min-width: 1025px) and (max-width: 1280px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) {
+    
+    /* CSS */
+    
+  }
+  
+  /* 
+    ##Device = Tablets, Ipads (landscape)
+    ##Screen = B/w 768px to 1024px
+  */
+  
+  @media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    
+    .col-md-8 {
+        flex: 0 0 auto;
+        width: 100.666667%;
+    }
+    .fancy_addtocart {
+        background: none;
+        padding: 0px;
+        margin: 0px;
+        min-width: 0px;
+        text-align: center;
+        left: 37%;
+        position: relative;
+    }
+  }
+  
+  /* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+  
+  @media (min-width: 481px) and (max-width: 767px) {
+    
+    .fancy_addtocart {
+        background: none;
+        padding: 0px;
+        margin: 0px;
+        min-width: 0px;
+        text-align: center;
+    }
+    
+  }
+  
+  /* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+  
+  @media (min-width: 320px) and (max-width: 480px) {
+    .fancy_addtocart {
+        background: none;
+        padding: 0px;
+        margin: 0px;
+        min-width: 0px;
+        text-align: center;
+    }
+    .wing_area {
+        padding: 21px 0px;
+    }
+    .order_includes {
+        padding: 3px 0px;
+    }
+    img.menu_img2 {
+        width: 109px;
+    }
+    img.menu_img1 {
+        width: 135px;
+    }
+    .chart {
+        padding-bottom: 0px;
+    }
+    
+  }
